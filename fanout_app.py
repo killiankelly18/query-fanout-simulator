@@ -26,7 +26,7 @@ def chunk_text(text, max_tokens=200):
     return [enc.decode(tokens[i:i+max_tokens]) for i in range(0, len(tokens), max_tokens)]
 
 def generate_entity_and_queries(text):
-    model = genai.GenerativeModel("gemini-pro")
+    model = genai.GenerativeModel("models/gemini-pro")
     prompt = f"""
 You are simulating AI search behavior. Based on the content below:
 1. Identify the main ontological entity.
