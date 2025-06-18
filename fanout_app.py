@@ -10,7 +10,7 @@ import os
 
 # 🔐 Configure API keys from Streamlit Secrets
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("OPENAI_API_KEY"))
 
 # --- Helper functions ---
 def fetch_page_text(url):
